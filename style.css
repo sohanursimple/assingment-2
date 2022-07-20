@@ -1,7 +1,10 @@
 body {
-    max-width: 1321px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 li {
@@ -10,11 +13,10 @@ li {
 
 /* banner section */
 .banner {
-    margin: 100px 0px;
-}
-
-.hero-content {
     display: flex;
+    max-width: 1321px;
+    height: 650px;
+    margin: 50px auto;
     background-color: #d6d9ff;
     border-radius: 20px;
     align-items: center;
@@ -22,22 +24,25 @@ li {
     padding: 50px 0px 0px 0px;
 }
 
-.hero-content h1 {
+.banner h1 {
     font-size: 54px;
-    line-height: 60px;
+    line-height: 80px;
     margin: 0;
 }
 
 .player-info {
-    padding-left: 50px;
+    padding: 50px;
+    max-width: 50%;
 }
 
 .player-images {
-    /* margin-bottom: -7px; */
+    max-width: 50%;
 }
 
 .player-images img {
-    display: block;
+    height: 613px;
+    position: relative;
+    bottom: -7px;
 }
 
 .watch-btn {
@@ -63,7 +68,8 @@ a.watch-btn span {
 
 .sports-activity {
     display: flex;
-    margin: 100px 0px;
+    max-width: 1321px;
+    margin: 0 auto;
 }
 
 .single-box-container {
@@ -100,7 +106,6 @@ a.watch-btn span {
     color: #fff;
     font-size: 18px;
     text-align: center;
-    border: 1px solid #fff;
     padding: 10px;
     text-decoration: none;
     margin: 15px 0px;
@@ -175,57 +180,100 @@ ul.footer-menu li {
 
 
 @media screen and (max-width:576px) {
-    .hero-content {
+    .banner {
+        padding: 0 30px;
         grid-template-columns: repeat(1, 1fr);
         display: table;
+    }
+
+    .banner h1 {
+        font-size: 44px;
+        line-height: 54px;
+        padding-bottom: 20px;
+    }
+
+    .player-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .player-images {
+        max-width: 100%;
     }
 
     .player-images img {
         width: 100%;
     }
 
-    .card {
-        background-color: red;
+    .side-manu {
+        width: 312px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
 
+    .single-box-container {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 20px;
+        padding: 0 30px;
     }
 
     .sports-activity {
         flex-flow: column;
     }
+
+    ul.footer-menu li {
+        display: block;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
+    .banner {
+        margin: 20px;
+    }
 
-    body {
-        max-width: 992px;
-        margin: 0 auto;
-        font-family: 'Poppins', sans-serif;
+    .banner h1 {
+        font-size: 44px;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    .player-images img {
+        width: 100%;
     }
 
     .single-box-container {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
     }
 
     .viewall-btn {
         visibility: visible;
     }
 
+    button.viewall-btn {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        background-color: rgb(36, 184, 36);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .sports-activity {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 
     .side-manu {
-        display: flex;
-        width: 100%;
+        width: 50%;
         margin: 0 auto;
-        background: none;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .side-manu a {
-        margin: 20px;
+        background-color: #fff;
     }
 
     .single-manu-box {
@@ -235,5 +283,9 @@ ul.footer-menu li {
     .container {
         grid-template-columns: repeat(2, 1fr);
         background-color: antiquewhite;
+    }
+
+    .player-info {
+        padding-left: 50px;
     }
 }
