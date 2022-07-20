@@ -1,23 +1,24 @@
 body {
-    max-width: 1240px;
+    max-width: 1321px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
 }
 
-.mid {
-    display: flex;
 
+li {
+    list-style-type: none;
 }
+
+
 
 /* banner section */
 .banner {
-    padding: 100px 0 10px 30px;
+    margin: 100px 0px;
 }
 
 .hero-content {
-    background-color: azure;
+    background-color: #d6d9ff;
     display: flex;
-    border: 1px solid;
     border-radius: 20px;
     align-items: center;
     text-align: left;
@@ -25,7 +26,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 44px;
+    font-size: 54px;
     line-height: 60px;
     margin: 0;
 }
@@ -45,22 +46,45 @@ body {
     font-weight: bold;
 }
 
-.single {
-    margin: 10px;
+a.watch-btn span {
+    padding-left: 10px;
 }
 
-.container {
+/* sports-activity */
+
+.sports-activity {
+    display: flex;
+    margin: 100px 0px;
+}
+
+.single-box-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    border: 1px solid red;
+}
+
+.single-manu-box {
+    padding: 0px 30px;
+}
+
+.single-player-btn {
+    display: inline-block;
+    border: 2px solid #000;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 .side-manu {
-    width: 300px;
+    width: 312px;
+    height: 312px;
     padding: 20px;
-    border: 1px solid azure;
-    background-color: azure;
+    border: 1px solid #d6d9ff;
+    background-color: #d6d9ff;
     border-radius: 5px;
 }
 
@@ -79,15 +103,59 @@ body {
 
 .card {
     max-width: 100%;
-    background-color: azure;
-    border: 1px solid firebrick;
-    padding: 20px;
-    text-align: left;
-    border-radius: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #d6d9ff;
+    border-radius: 10px;
 }
 
-.card img {
-    width: 50%;
+.single-playre-info img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.single-player-content {
+    padding: 20px;
+}
+
+.card ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card ul li {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.card ul li span {
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #d6d9ff;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.main-footer {
+    padding: 20px 0px;
+}
+
+footer hr {
+    width: 70%;
+}
+
+.social-icon li {
+    display: inline-block;
+    text-align: center;
+}
+
+ul.footer-menu li {
+    display: inline-block;
+    padding: 10px 20px;
 }
 
 @media screen and (max-width:576px) {
@@ -102,7 +170,7 @@ body {
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .mid {
+    .sports-activity {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
