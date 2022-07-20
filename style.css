@@ -68,8 +68,8 @@ a.watch-btn span {
 
 .sports-activity {
     display: flex;
-    max-width: 1321px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 50px auto;
 }
 
 .single-box-container {
@@ -101,7 +101,7 @@ a.watch-btn span {
     border-radius: 5px;
 }
 
-.side-manu a {
+.side-menu-btn {
     display: block;
     color: #fff;
     font-size: 18px;
@@ -178,7 +178,35 @@ ul.footer-menu li {
     padding: 10px 20px;
 }
 
+/* --------------------------up-camming page */
+.up-camming-card {
+    text-align: center;
+    width: 312px;
+    height: 242px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.match {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.match-info h3 {
+    font-weight: 600;
+    color: #161616;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* responsive */
 @media screen and (max-width:576px) {
     .banner {
         padding: 0 30px;
@@ -225,6 +253,11 @@ ul.footer-menu li {
 
     ul.footer-menu li {
         display: block;
+    }
+
+    /* up-comming-page */
+    .up-camming-card {
+        margin: 0 auto;
     }
 }
 
@@ -287,5 +320,10 @@ ul.footer-menu li {
 
     .player-info {
         padding-left: 50px;
+    }
+
+    /* .up-camming-card */
+    .up-camming-card {
+        width: 100%;
     }
 }
