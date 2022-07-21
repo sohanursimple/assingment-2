@@ -35,16 +35,6 @@ li {
     max-width: 50%;
 }
 
-.player-images {
-    max-width: 50%;
-}
-
-.player-images img {
-    height: 613px;
-    position: relative;
-    bottom: -7px;
-}
-
 .watch-btn {
     display: inline-block;
     margin-top: 10px;
@@ -60,8 +50,14 @@ a.watch-btn span {
     padding-left: 10px;
 }
 
-.viewall-btn {
-    visibility: hidden;
+.player-images {
+    max-width: 50%;
+}
+
+.player-images img {
+    height: 640px;
+    position: relative;
+    bottom: -7px;
 }
 
 /* sports-activity */
@@ -82,17 +78,6 @@ a.watch-btn span {
     padding: 0px 30px;
 }
 
-.single-player-btn {
-    display: inline-block;
-    border: 2px solid #000;
-    margin-top: 20px;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 5px;
-    color: #000;
-    font-weight: bold;
-    text-transform: capitalize;
-}
 
 .side-manu {
     width: 312px;
@@ -136,6 +121,18 @@ a.btn-active {
     padding: 20px;
 }
 
+.single-player-btn {
+    display: inline-block;
+    border: 2px solid #000;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 .card ul {
     margin: 0px;
     padding: 0px;
@@ -149,6 +146,10 @@ a.btn-active {
 
 .card ul li span {
     padding: 10px;
+}
+
+.viewall-btn {
+    visibility: hidden;
 }
 
 /* footer */
@@ -181,8 +182,8 @@ ul.footer-menu li {
 /* --------------------------up-camming page */
 .up-camming-card {
     text-align: center;
-    width: 312px;
-    height: 242px;
+    width: 315px;
+    height: 245px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     border-radius: 8px;
     display: flex;
@@ -192,7 +193,6 @@ ul.footer-menu li {
 
 .match {
     display: flex;
-    /* flex-direction: column; */
     gap: 20px;
 }
 
@@ -203,7 +203,6 @@ ul.footer-menu li {
     text-align: center;
     margin-top: 20px;
 }
-
 
 
 /* responsive */
